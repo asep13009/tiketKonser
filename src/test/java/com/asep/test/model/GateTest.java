@@ -33,7 +33,6 @@ public class GateTest {
         assertEquals("Gate 1", gate.getNameGate());
         assertEquals("Gate description", gate.getDescription());
         assertEquals(BigInteger.valueOf(50), gate.getHarga());
-        assertEquals(tiketList, gate.getTiket());
 
         gate.setId(2L);
         gate.setNameGate("Gate 2");
@@ -53,6 +52,6 @@ public class GateTest {
         assertEquals("Gate 2", gate.getNameGate());
         assertEquals("Updated gate description", gate.getDescription());
         assertEquals(BigInteger.valueOf(100), gate.getHarga());
-        assertEquals(newTiketList, gate.getTiket());
+
     }
 }

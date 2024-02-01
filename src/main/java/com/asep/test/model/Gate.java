@@ -22,9 +22,6 @@ public class Gate extends  AbsModel {
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Tiket> tiket;
 
-    public List<Tiket> getTiket() {
-        return tiket;
-    }
 
     public void setTiket(List<Tiket> tiket) {
         this.tiket = tiket;

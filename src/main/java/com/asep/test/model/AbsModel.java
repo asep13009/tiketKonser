@@ -19,19 +19,4 @@ public abstract class AbsModel {
     @Column(name = "updatdate")
     private Date updatdate;
 
-    public Date getCreatedate() {
-        return createdate;
-    }
-
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
-    }
-
-    public Date getUpdatdate() {
-        return updatdate;
-    }
-
-    public void setUpdatdate(Date updatdate) {
-        this.updatdate = updatdate;
-    }
 }
