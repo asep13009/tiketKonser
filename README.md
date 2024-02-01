@@ -103,3 +103,8 @@ body :
 "banyaknya": 3
 }
 ]
+
+
+# RELATIONAL DATABASE CONCEPT
+
+![img.png](img.png)
