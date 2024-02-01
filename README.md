@@ -8,7 +8,9 @@ method : GET
 # create konser
 url : localhost:8080/konser/create
 method : POST
-body : {
+body : 
+
+{
 "namaKonser": "KONSER KKKK",
 "descKonser": "KONSER RAKYAT",
 "poster": "-",
@@ -80,6 +82,7 @@ body :
 
 # delete
 url : localhost:8080/konser/delete/3114f1ae-5033-460a-ad43-b275addd513c
+
 method : DELETE
 
 # find by id
