@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "f861613b-b04e-4415-a1cc-f9895ff5032c",
+		"name": "TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5456581",
+		"_collection_link": "https://gold-crescent-851408.postman.co/workspace/ALLIANZ~f1db2c96-4169-45f4-adb7-00913b753d8e/collection/5456581-f861613b-b04e-4415-a1cc-f9895ff5032c?action=share&source=collection_link&creator=5456581"
+	},
+	"item": [
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/konser/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konser",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " { \r\n        \"namaKonser\": \"KONSER D\",\r\n        \"descKonser\": \"DESC KONSER D \",\r\n        \"poster\": \"-\",\r\n        \"waktuPelaksanaan\": \"2024-01-31T05:39:40.404+00:00\",\r\n        \"hargaKonser\": 120000, \r\n        \"active\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/konser/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konser",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n    \"namaKonser\": \"KONSER KKKK\",\r\n    \"descKonser\": \"KONSER RAKYAT\",\r\n    \"poster\": \"-\",\r\n    \"waktuPelaksanaan\": \"2024-01-31 14:50:09\",\r\n    \"hargaKonser\": [\r\n        {\r\n            \"id\": 17,\r\n            \"nameGate\": \"TRIBUN A+\",\r\n            \"harga\": 200000\r\n        },\r\n        \r\n        {\r\n            \"id\": 18,\r\n            \"nameGate\": \"TIBUN B+\",\r\n            \"harga\": 300000\r\n        },\r\n        {\r\n            \"id\": 19,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 450000\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 400000\r\n        },\r\n        {\r\n            \r\n            \"nameGate\": \"TRIBUN CUS+\",\r\n            \"harga\": 400000\r\n        }\r\n    ],\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/konser/update/b009b67f-5c14-441d-b3c1-7d7cfc2048c6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konser",
+						"update",
+						"b009b67f-5c14-441d-b3c1-7d7cfc2048c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n    \"namaKonser\": \"KONSER KKKK\",\r\n    \"descKonser\": \"KONSER RAKYAT\",\r\n    \"poster\": \"-\",\r\n    \"waktuPelaksanaan\": \"2024-01-31 14:50:09\",\r\n    \"hargaKonser\": [\r\n        {\r\n            \"id\": 17,\r\n            \"nameGate\": \"TRIBUN A+\",\r\n            \"harga\": 200000\r\n        },\r\n        \r\n        {\r\n            \"id\": 18,\r\n            \"nameGate\": \"TIBUN B+\",\r\n            \"harga\": 300000\r\n        },\r\n        {\r\n            \"id\": 19,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 450000\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 400000\r\n        },\r\n        {\r\n            \r\n            \"nameGate\": \"TRIBUN CUS+\",\r\n            \"harga\": 400000\r\n        }\r\n    ],\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/konser/delete/3114f1ae-5033-460a-ad43-b275addd513c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konser",
+						"delete",
+						"3114f1ae-5033-460a-ad43-b275addd513c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n    \"namaKonser\": \"KONSER KKKK\",\r\n    \"descKonser\": \"KONSER RAKYAT\",\r\n    \"poster\": \"-\",\r\n    \"waktuPelaksanaan\": \"2024-01-31 14:50:09\",\r\n    \"hargaKonser\": [\r\n        {\r\n            \"id\": 17,\r\n            \"nameGate\": \"TRIBUN A+\",\r\n            \"harga\": 200000\r\n        },\r\n        \r\n        {\r\n            \"id\": 18,\r\n            \"nameGate\": \"TIBUN B+\",\r\n            \"harga\": 300000\r\n        },\r\n        {\r\n            \"id\": 19,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 450000\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"nameGate\": \"TRIBUN C+\",\r\n            \"harga\": 400000\r\n        },\r\n        {\r\n            \r\n            \"nameGate\": \"TRIBUN CUS+\",\r\n            \"harga\": 400000\r\n        }\r\n    ],\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/konser/find/3114f1ae-5033-460a-ad43-b275addd513c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konser",
+						"find",
+						"3114f1ae-5033-460a-ad43-b275addd513c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pemesanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"totalHarga\":\"\",\r\n    \"banyaknya\":\"\",\r\n    \"konser\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tiket/insert",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tiket",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
